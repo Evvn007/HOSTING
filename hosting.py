@@ -12,7 +12,6 @@ python-telegram-bot[job-queue]>=22,<23
 """
 
 from __future__ import annotations
-
 import asyncio
 import html
 import json
@@ -84,13 +83,13 @@ from telegram.ext import (
 # ═════════════════════════════════════════════════════════════════════════════
 
 # Revoke every token previously shared in chat and paste a NEW BotFather token.
-TOKEN = os.getenv("BOT_TOKEN", "9018854385:AAEUJsZ03o8tOELeORELcazd8OPVmFnLK-I")
+TOKEN = os.getenv("BOT_TOKEN", "9001559369:AAEV2xfcQ2Scx_GcUcebTT3sqJAfqDb-Iyo")
 
 OWNER_ID = int(os.getenv("OWNER_ID", "8043736737"))
 ACCESS_PASSWORD = "EVVN007"
 
-BRAND_NAME = "YASH"
-OWNER_NAME = "YASH"
+BRAND_NAME = "EVVN007"
+OWNER_NAME = "EVVN007"
 OWNER_USERNAME = "@EVVN007"
 
 CHANNEL_LINKS = []
