@@ -63,7 +63,7 @@ def InlineKeyboardButton(*args: Any, **kwargs: Any) -> TelegramInlineKeyboardBut
     return TelegramInlineKeyboardButton(*args, **kwargs)
 
 def KeyboardButton(*args: Any, **kwargs: Any) -> TelegramKeyboardButton:
-    kwargs.setdefault("style", _button_style(args[0] if args else kwargs.get("text", "")))
+    kwargs.pop("style", None)
     return TelegramKeyboardButton(*args, **kwargs)
 from telegram.constants import ParseMode
 from telegram.error import BadRequest, Forbidden, TelegramError
